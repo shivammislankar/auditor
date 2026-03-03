@@ -1,0 +1,49 @@
+/* Replace your entire #root block with this */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Global Modern Toolkit --- */
+.rounded-4 { border-radius: 1.25rem !important; }
+.fw-black { font-weight: 900; }
+.bg-light { background-color: #f8f9fc !important; }
+.btn-primary { background-color: #4e73df; border: none; }
+.text-primary { color: #4e73df !important; }
+
+/* Smooth transitions */
+.list-group-item {
+  transition: all 0.2s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #4e73df;
+  border-radius: 10px;
+}
+
+/* Premium Hover Effect for Feature Cards */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.1) !important;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(90deg, #4e73df 0%, #224abe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

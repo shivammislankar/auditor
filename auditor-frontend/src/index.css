@@ -1,0 +1,36 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Force viewport width */
+  overflow-x: hidden;
+  background-color: #000; /* Matching your screenshot's dark theme */
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* This ensures the background color fills the whole screen */
+/* Ensure the root and body take up the full screen and follow theme colors */
+html, body, #root {
+  min-height: 100vh;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme='dark'] body {
+  background-color: #121212 !important; /* Deep charcoal, better than pure black */
+  color: #e0e0e0;
+}
+
+/* Fix for those white cards in your screenshot */
+[data-bs-theme='dark'] .bg-body-tertiary {
+  background-color: #1e1e1e !important;
+}
